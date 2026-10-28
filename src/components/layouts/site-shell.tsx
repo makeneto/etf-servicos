@@ -6,9 +6,7 @@ export default function SiteShell({ children }: { children: ReactNode }) {
   return (
     <React.Fragment>
       <Navbar />
-      <main className="w-7xl mx-auto border-x border-slate-200 px-4">
-        {children}
-      </main>
+      {children}
       {/* <Footer /> */}
     </React.Fragment>
   )
