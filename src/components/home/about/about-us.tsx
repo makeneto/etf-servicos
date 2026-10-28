@@ -1,56 +1,65 @@
 export default function AboutUs() {
   return (
-    <section className="relative flex min-h-72 items-center px-4 py-8 sm:px-10 lg:px-20">
-      <div className="relative z-10 mx-auto grid min-h-64 w-full grid-cols-1 overflow-hidden rounded-lg bg-[#0865c9] text-white sm:grid-cols-[24%_76%] md:min-h-72">
-        <div
-          className="relative min-h-56 bg-cover bg-center sm:min-h-72"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85')"
-          }}
-          role="img"
-          aria-label="Escritório moderno"
-        >
-          <div className="absolute inset-0 bg-black/10" />
+    <section className="py-4 w-7xl mx-auto border-x border-b border-slate-200 px-4">
+      <div className="relative z-10 mx-auto grid min-h-64 w-full grid-cols-1 overflow-hidden bg-[#0865c9] p-20 text-white sm:grid-cols-[30%_auto]">
+        <div className="relative min-h-56 sm:min-h-110">
+          <div className="absolute -left-20 -top-20 h-full w-full bg-black" />
+
+          <div
+            className="relative z-10 h-full min-h-56 bg-cover bg-center sm:min-h-110"
+            style={{
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85')",
+            }}
+            role="img"
+            aria-label="Escritório moderno"
+          >
+            <div className="absolute inset-0 bg-black/10" />
+          </div>
         </div>
 
-        <div className="flex flex-col justify-center px-8 py-8 sm:px-10 md:px-14 lg:px-16">
-          <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/95">
-            About
-          </p>
+        <div className="flex flex-col justify-between px-8 sm:px-10 md:px-14 lg:px-16">
+          <div>
+            <p className="mb-3 text-sm text-white/80">Sobre nós</p>
 
-          <h1 className="max-w-md text-2xl font-semibold leading-tight md:text-[30px]">
-            Innovative Digital Solutions
-            <br />
-            to Accelereate Your
-            <br />
-            Business Growth.
-          </h1>
+            <h1 className="text-2xl leading-tight md:text-[2.6rem]">
+              Innovative Digital Solutions to Accelerate Your Business Growth.
+            </h1>
 
-          <p className="mt-4 max-w-[390px] text-[10px] leading-relaxed text-white/85 md:text-xs">
-            We are a dynamic and forward-thinking team, dedicated to helping
-            businesses achieve their digital aspirations.
-          </p>
+            <p className="mt-4 max-w-xl text-[10px] leading-relaxed text-white/85 md:text-base">
+              We are a dynamic and forward-thinking team, dedicated to helping
+              businesses achieve their digital aspirations.
+            </p>
+          </div>
 
-          <div className="mt-5 grid max-w-[480px] grid-cols-3 gap-5 md:mt-6 md:gap-8">
+          <div className="mt-5 flex items-baseline justify-between gap-5 md:mt-6 md:gap-8">
             <div>
-              <p className="text-3xl leading-none md:text-[34px]">
-                2.3K <span className="text-lg">+</span>
+              <p className="flex items-center gap-2 text-3xl leading-none font-semibold md:text-5xl">
+                2.3K <span className="mb-2 text-lg md:text-5xl">+</span>
               </p>
-              <p className="mt-2 text-[8px] text-white/75 md:text-[9px]">
-                satisfied customers
+
+              <p className="mt-2 text-[8px] text-white/75 md:text-sm">
+                Satisfied customers
               </p>
             </div>
+
             <div>
-              <p className="text-3xl leading-none md:text-[34px]">20</p>
-              <p className="mt-2 text-[8px] text-white/75 md:text-[9px]">
-                industries served
+              <p className="text-3xl leading-none font-semibold md:text-5xl">
+                20
+              </p>
+
+              <p className="mt-2 text-[8px] text-white/75 md:text-sm">
+                Industries served
               </p>
             </div>
+
             <div>
-              <p className="text-3xl leading-none md:text-[34px]">1.9K</p>
-              <p className="mt-2 text-[8px] text-white/75 md:text-[9px]">
-                completed projects
+              <p className="text-3xl leading-none font-semibold md:text-5xl">
+                1.9K
+              </p>
+
+              <p className="mt-2 text-[8px] text-white/75 md:text-sm">
+                Completed projects
               </p>
             </div>
           </div>
