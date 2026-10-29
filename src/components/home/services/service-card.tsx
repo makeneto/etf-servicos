@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Service } from "@/data/services"
 import { cn } from "@/lib/utils"
 import { CheckCircle } from "lucide-react"
+import Link from "next/link"
 
 type ServiceCardProps = {
   service: Service
@@ -13,7 +14,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
   return (
     <article
       className={cn(
-        "border p-8",
+        "border p-6 lg:p-8",
         featured
           ? "border-none bg-[#0865c9] text-white shadow-2xl"
           : "border-slate-200",
@@ -22,7 +23,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
       <span className="text-sm font-semibold">{category}</span>
 
       <div>
-        <h3 className="mt-3.5 text-2xl font-semibold">{title}</h3>
+        <h3 className="mt-3.5 text-xl lg:text-2xl font-semibold">{title}</h3>
         <p
           className={cn(
             "mt-1 text-sm",
@@ -41,12 +42,14 @@ export function ServiceCard({ service }: ServiceCardProps) {
         ))}
       </ul>
 
-      <Button
-        variant={featured ? "secondary" : "outline"}
-        className="mt-7 w-full rounded-none py-5"
-      >
-        Solicitar Serviço
-      </Button>
+      <Link href="/#contact" aria-label={`Solicite o serviço de ${title}`}>
+        <Button
+          variant={featured ? "secondary" : "outline"}
+          className="mt-7 w-full rounded-none py-5"
+        >
+          Solicitar Serviço
+        </Button>
+      </Link>
     </article>
   )
 }

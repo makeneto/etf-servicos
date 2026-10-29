@@ -1,9 +1,12 @@
-export default function AboutUs() {
+export default function AboutSection() {
   return (
-    <section className="py-4 w-7xl mx-auto border-x border-b border-slate-200 px-4">
-      <div className="relative z-10 mx-auto grid min-h-64 w-full grid-cols-1 overflow-hidden bg-[#0865c9] p-20 text-white sm:grid-cols-[30%_auto]">
+    <section
+      id="about"
+      className="scroll-mt-16 w-[97%] 2xl:w-7xl mx-auto lg:border-x border-b border-slate-200 p-0 lg:px-6 lg:py-4"
+    >
+      <div className="relative z-10 mx-auto grid min-h-64 w-full grid-cols-1 sm:grid-cols-[30%_auto] overflow-hidden bg-[#0865c9] px-6 py-10 lg:p-20 text-white">
         <div className="relative min-h-56 sm:min-h-110">
-          <div className="absolute -left-20 -top-20 h-full w-full bg-black" />
+          <div className="absolute -left-20 -top-22 lg:-top-20 h-full w-full bg-black" />
 
           <div
             className="relative z-10 h-full min-h-56 bg-cover bg-center sm:min-h-110"
@@ -18,7 +21,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-between px-8 sm:px-10 md:px-14 lg:px-16">
+        <div className="flex flex-col justify-between py-5 sm:py-0 px-6 sm:px-10 md:px-14 lg:px-16">
           <div>
             <p className="mb-3 text-sm text-white/80">Sobre nós</p>
 

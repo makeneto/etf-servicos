@@ -1,37 +1,15 @@
 import Image from "next/image"
 import Link from "next/link"
 
-type NavLink = {
-  label: string
-  href: string
-  ariaLabel: string
-}
-
-const navLinks: NavLink[] = [
-  {
-    label: "Home",
-    href: "/",
-    ariaLabel: "Go to home page"
-  },
-  {
-    label: "Section",
-    href: "/#section",
-    ariaLabel: "Go to section"
-  },
-  {
-    label: "Footer",
-    href: "/#footer",
-    ariaLabel: "Go to footer"
-  }
-]
+import NavbarLinkList from "./navbar-link-list"
 
 export default function Navbar() {
   return (
-    <div className="border-b border-slate-200">
-      <nav className="w-7xl mx-auto p-4 flex items-center justify-between">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white">
+      <nav className="w-[97%] 2xl:max-w-7xl mx-auto flex items-center justify-between border-x border-slate-200 px-6 py-4 2xl:py-4 2xl:px-20">
         <Link
           href="/"
-          aria-label="Go to homepage"
+          aria-label="Ir para a página inicial"
           className="flex items-center gap-3"
         >
           <Image
@@ -39,23 +17,13 @@ export default function Navbar() {
             alt="Etf Logo"
             width={300}
             height={50}
-            className="w-auto h-9"
+            className="h-9 w-auto"
           />
-          <p className="font-semibold mt-1">ETF Serviços</p>
+          <p className="mt-1 font-semibold">Comércio e Serviços</p>
         </Link>
-        <ul className="flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              href={link.href}
-              key={link.href}
-              aria-label={link.ariaLabel}
-              className="text-sm text-neutral-600 hover:text-black hover:underline underline-offset-2 transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </ul>
+
+        <NavbarLinkList />
       </nav>
-    </div>
+    </header>
   )
 }

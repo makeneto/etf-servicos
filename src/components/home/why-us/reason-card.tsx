@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { Reason } from "@/data/reasons"
 import { cn } from "@/lib/utils"
 
@@ -7,7 +6,7 @@ type ReasonCardProps = {
 }
 
 export function ReasonCard({ reason }: ReasonCardProps) {
-  const { icon: Icon, title, description, actionLabel, featured } = reason
+  const { icon: Icon, title, description, featured } = reason
 
   return (
     <article
@@ -21,7 +20,7 @@ export function ReasonCard({ reason }: ReasonCardProps) {
       <Icon className="size-8" strokeWidth={1.5} />
 
       <div className="mt-8">
-        <h3 className="text-xl font-semibold">{title}</h3>
+        <h3 className="text-lg lg:text-xl font-medium">{title}</h3>
         <p
           className={cn(
             "mt-1 text-sm",
@@ -31,13 +30,6 @@ export function ReasonCard({ reason }: ReasonCardProps) {
           {description}
         </p>
       </div>
-
-      <Button
-        variant={featured ? "secondary" : "outline"}
-        className="mt-7 w-full rounded-none py-5"
-      >
-        {actionLabel}
-      </Button>
     </article>
   )
 }

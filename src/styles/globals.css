@@ -4,11 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-body {
-  color: black;
-  font-family: var(--font-inter), sans-serif;
-}
-
 @theme inline {
   --font-heading: var(--font-sans);
   --font-sans: var(--font-sans);
@@ -70,7 +65,7 @@ body {
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.92 0.004 286.32);
   --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.705 0.015 286.067);
+  --ring: oklch(0.809 0.105 251.813);
   --chart-1: oklch(0.809 0.105 251.813);
   --chart-2: oklch(0.623 0.214 259.815);
   --chart-3: oklch(0.546 0.245 262.881);
@@ -105,8 +100,8 @@ body {
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.552 0.016 285.938);
-  --chart-1: oklch(0.809 0.105 251.813);
+  --ring: oklch(0.809 0.105 251.813);
+  --chart-1: #8ec5ff;
   --chart-2: oklch(0.623 0.214 259.815);
   --chart-3: oklch(0.546 0.245 262.881);
   --chart-4: oklch(0.488 0.243 264.376);
@@ -130,5 +125,153 @@ body {
   }
   html {
     @apply font-sans;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: black;
+  font-family: var(--font-body), sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display), sans-serif;
+}
+
+::selection {
+  background-color: rgb(203, 228, 255);
+}
+
+.dotted-bg {
+  background-image: radial-gradient(rgba(20, 90, 161, 0.204) 1px, #0000 1px);
+  background-size: 1.08rem 1.08rem;
+  background-attachment: fixed;
+}
+
+.learn-more {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 10.5rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+  background: #0865c9;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.5rem;
+  width: 1rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.65rem 0;
+  margin: 0 0 0 0.75rem;
+  color: #282936;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button.learn-more:hover .circle {
+  width: 92%;
+}
+
+button.learn-more:active .circle {
+  transform: translateY(3px);
+}
+
+button.learn-more:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(0.8rem, 0);
+}
+
+button.learn-more:hover .button-text {
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  button.learn-more {
+    width: 9rem;
+  }
+
+  button.learn-more .circle {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  button.learn-more .circle .icon.arrow {
+    left: 0.4rem;
+    width: 0.85rem;
+  }
+
+  button.learn-more .circle .icon.arrow::before {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  button.learn-more .button-text {
+    padding: 0.45rem 0;
+    margin-left: 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  button.learn-more:hover .circle .icon.arrow {
+    transform: translate(0.6rem, 0);
   }
 }

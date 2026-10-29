@@ -1,17 +1,21 @@
 import React from "react"
 
-import AboutUs from "@/components/home/about/about-us"
-import Hero from "@/components/home/hero/hero"
-import OurServices from "@/components/home/services/our-services"
+import HeroSection from "@/components/home/hero/hero-section"
+import AboutSection from "../components/home/about/about-section"
+import ServicesSection from "../components/home/services/services-section"
 import WhyUs from "@/components/home/why-us/why-choose-us"
+import ContactSection from "@/components/home/contact/contact-section"
+import FaqSection from "@/components/home/faq/faq.section"
 
 export default function Home() {
   return (
     <React.Fragment>
-      <Hero />
-      <AboutUs />
-      <OurServices />
+      <HeroSection />
+      <AboutSection />
+      <ServicesSection />
       <WhyUs />
+      <ContactSection />
+      <FaqSection />
     </React.Fragment>
   )
 }
