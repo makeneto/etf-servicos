@@ -1,5 +1,5 @@
 export const site = {
-  googleSiteVerification: "mmmmmmm",
+  googleSiteVerification: "wdwSqtetM5n4kl6ir_1ujc_Ys73yidPddPGsPxUtTzs",
   
   url: "https://www.etfservicos.com",
 
