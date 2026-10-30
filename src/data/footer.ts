@@ -68,7 +68,7 @@ export const CONTACT_ITEMS: ContactItem[] = [
   {
     id: "whatsapp",
     label: "WhatsApp",
-    href: "https://wa.me/244951116116",
+    href: "https://wa.me/244942555423",
     ariaLabel: "Contactar pelo WhatsApp",
     icon: RiWhatsappLine,
     external: true,

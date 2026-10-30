@@ -10,8 +10,8 @@ export const site = {
     "Consultoria em recursos humanos, contabilidade e serviços de limpeza para empresas e residências.",
 
   email: "geral.etfconsultoria@gmail.com",
-  phoneLabel: "+244 951 116 116",
-  phoneLink: "tel:244951116116",
+  phoneLabel: "+244 942 555 423",
+  phoneLink: "tel:244942555423",
 
   keywords: [
     "ETF Comércio e Serviços",
