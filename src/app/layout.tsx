@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: site.companyName,
     description: site.companyDescription,
-    images: ["https://i.postimg.cc/xC83Kj5T/etf.png"],
+    images: ["https://i.postimg.cc/RVYDKzd2/etf.png"],
     url: site.url,
   },
   icons: {

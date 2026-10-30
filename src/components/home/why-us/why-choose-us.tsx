@@ -6,7 +6,7 @@ export default function WhyChooseUs() {
   return (
     <section
       id="differences"
-      className="dotted-bg scroll-mt-16 w-[97%] 2xl:w-7xl flex mx-auto flex-col gap-15 border-x border-b border-slate-200 px-5 lg:px-20 py-22"
+      className="dotted-bg scroll-mt-17 2xl:scroll-mt-16 w-[97%] 2xl:w-7xl flex mx-auto flex-col gap-15 border-x border-b border-slate-200 px-5 lg:px-20 py-22"
     >
       <SectionHeader
         label="Diferenciais"

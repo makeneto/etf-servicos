@@ -1,13 +1,20 @@
-import React, { ReactNode } from "react"
-import Navbar from "./navbar/navbar"
-import Footer from "./footer/footer"
+import type { ReactNode } from "react"
 
-export default function SiteShell({ children }: { children: ReactNode }) {
+import Footer from "./footer/footer"
+import Navbar from "./navbar/navbar"
+import { Toaster, ToastProvider } from "../ui/toast"
+
+interface SiteShellProps {
+  children: ReactNode
+}
+
+export default function SiteShell({ children }: SiteShellProps) {
   return (
-    <React.Fragment>
+    <ToastProvider>
       <Navbar />
       {children}
       <Footer />
-    </React.Fragment>
+      <Toaster />
+    </ToastProvider>
   )
 }

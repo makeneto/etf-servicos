@@ -6,7 +6,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="scroll-mt-16 flex w-[97%] 2xl:w-7xl mx-auto lg:border-l border-b border-slate-200 sm:grid sm:grid-cols-2 sm:gap-8 lg:gap-0"
+      className="scroll-mt-12 sm:scroll-mt-17 2xl:scroll-mt-16 flex w-[97%] 2xl:w-7xl mx-auto lg:border-l border-b border-slate-200 sm:grid sm:grid-cols-2 sm:gap-8 lg:gap-0"
     >
       <div className="flex flex-col gap-10 px-6 lg:px-20 py-22">
         <SectionHeader
