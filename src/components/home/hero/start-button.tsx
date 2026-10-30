@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button"
+import { ChevronDown } from "lucide-react"
 import Link from "next/link"
 
 export default function StartButton() {
@@ -7,8 +9,13 @@ export default function StartButton() {
         <span className="circle" aria-hidden="true">
           <span className="icon arrow"></span>
         </span>
+
         <span className="button-text">Começar</span>
       </button>
+
+      <Button className="lg:hidden mt-10 rounded-none text-base p-5">
+        Ver serviços <ChevronDown />
+      </Button>
     </Link>
   )
 }

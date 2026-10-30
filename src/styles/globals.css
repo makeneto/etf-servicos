@@ -179,7 +179,7 @@ button.learn-more .circle {
   margin: 0;
   width: 2.6rem;
   height: 2.6rem;
-  background: #0865c9;
+  background: #1279e8;
 }
 
 button.learn-more .circle .icon {
@@ -202,7 +202,7 @@ button.learn-more .circle .icon.arrow {
 button.learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
-  top: -0.25rem;
+  top: -0.2rem;
   right: 0.0625rem;
   width: 0.55rem;
   height: 0.55rem;
@@ -228,50 +228,29 @@ button.learn-more .button-text {
   text-transform: uppercase;
 }
 
-button.learn-more:hover .circle {
-  width: 92%;
-}
-
-button.learn-more:active .circle {
-  transform: translateY(3px);
-}
-
-button.learn-more:hover .circle .icon.arrow {
-  background: #fff;
-  transform: translate(0.8rem, 0);
-}
-
-button.learn-more:hover .button-text {
-  color: #fff;
-}
-
-@media (max-width: 640px) {
-  button.learn-more {
-    width: 9rem;
+/* Desktop: animação com hover */
+@media (min-width: 1024px) {
+  button.learn-more:hover .circle {
+    width: 90%;
   }
 
-  button.learn-more .circle {
-    width: 2.25rem;
-    height: 2.25rem;
-  }
-
-  button.learn-more .circle .icon.arrow {
-    left: 0.4rem;
-    width: 0.85rem;
-  }
-
-  button.learn-more .circle .icon.arrow::before {
-    width: 0.5rem;
-    height: 0.5rem;
-  }
-
-  button.learn-more .button-text {
-    padding: 0.45rem 0;
-    margin-left: 0.6rem;
-    font-size: 0.75rem;
+  button.learn-more:active .circle {
+    transform: translateY(3px);
   }
 
   button.learn-more:hover .circle .icon.arrow {
-    transform: translate(0.6rem, 0);
+    background: #fff;
+    transform: translate(0.8rem, 0);
+  }
+
+  button.learn-more:hover .button-text {
+    color: #fff;
+  }
+}
+
+/* Telemóvel e tablet: botão simples, só com o texto */
+@media (max-width: 1023px) {
+  button.learn-more {
+    display: none;
   }
 }
