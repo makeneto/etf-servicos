@@ -8,7 +8,7 @@ export default function AboutContent() {
         Detalhe.
       </h1>
 
-      <p className="mt-4 max-w-xl text-[10px] leading-relaxed text-white/85 md:text-base">
+      <p className="mt-4 max-w-xl text-sm sm:text-[10px] leading-relaxed text-white/85 md:text-base">
         A ETF Comércio e Serviços, LDA presta serviços de consultoria em
         contabilidade, gestão de recursos humanos e limpeza profissional, com
         rigor e dedicação, para empresas e particulares.
