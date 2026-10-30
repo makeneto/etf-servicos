@@ -8,7 +8,7 @@ import { FooterLinkList } from "./footer-link-list"
 export default function Footer() {
   return (
     <footer className="border-t border-slate-200">
-      <div className="w-[97%] 2xl:w-7xl mx-auto border-x border-slate-200">
+      <div className="sm:w-[97%] 2xl:w-7xl sm:mx-auto border-x border-slate-200">
         <div className="flex flex-col lg:flex-row lg:justify-between gap-10 px-6 lg:px-20 py-15 lg:py-22">
           <FooterBrand />
 

@@ -11,7 +11,7 @@ export default function FaqSection() {
   return (
     <section
       id="faq"
-      className="scroll-mt-17 2xl:scroll-mt-16 w-[97%] 2xl:w-7xl mx-auto flex flex-col sm:grid sm:grid-cols-2 gap-10 lg:border-x border-slate-200 px-6 lg:px-20 py-22 pb-32 lg:py-22"
+      className="scroll-mt-17 2xl:scroll-mt-16 sm:w-[97%] 2xl:w-7xl sm:mx-auto flex flex-col sm:grid sm:grid-cols-2 gap-10 lg:border-x border-slate-200 px-6 lg:px-20 py-22 pb-32 lg:py-22"
     >
       <SectionHeader
         label="FAQ"

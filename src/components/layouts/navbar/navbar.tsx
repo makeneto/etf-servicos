@@ -15,7 +15,7 @@ export default function Navbar() {
         isOpen ? "shadow-lg shadow-slate-800/10" : "shadow-none"
       }`}
     >
-      <div className="mx-auto w-[97%] border-x border-slate-200 2xl:max-w-7xl">
+      <div className="sm:w-[97%] 2xl:max-w-7xl sm:mx-auto border-x border-slate-200">
         <div className="flex items-center justify-between px-6 py-4 lg:px-20">
           <Logo />
           <NavbarLinkList className="hidden items-center gap-8 md:flex" />

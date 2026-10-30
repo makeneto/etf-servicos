@@ -6,7 +6,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="mx-auto w-[97%] scroll-mt-17 border-b border-slate-200 p-0 lg:border-x lg:p-6 2xl:w-7xl 2xl:scroll-mt-16"
+      className="sm:mx-auto sm:w-[97%] scroll-mt-17 border-b border-slate-200 p-0 lg:border-x lg:p-6 2xl:w-7xl 2xl:scroll-mt-16"
     >
       <div className="relative z-10 mx-auto grid min-h-64 w-full grid-cols-1 overflow-hidden bg-[#0865c9] p-6 pb-10 text-white lg:grid-cols-[30%_auto] lg:p-14">
         <AboutImage />

@@ -6,7 +6,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="scroll-mt-12 2xl:scroll-mt-16 w-[97%] 2xl:w-7xl mx-auto flex flex-col gap-15 border-x border-b border-slate-200 px-6 lg:px-20 py-22"
+      className="scroll-mt-12 2xl:scroll-mt-16 sm:w-[97%] 2xl:w-7xl sm:mx-auto flex flex-col gap-15 border-x border-b border-slate-200 px-6 lg:px-20 py-22"
     >
       <SectionHeader
         label="Pacotes"
